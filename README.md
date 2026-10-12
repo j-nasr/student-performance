@@ -36,7 +36,7 @@ This project answers those questions with hypothesis tests, multiple regression,
 
 `data/student_performance.csv`: 2,392 students (15-18 years old) with weekly study time, absences, tutoring, parental education and support, extracurricular and sports participation, GPA (0-4) and a letter-grade class.
 
-**Source:** [add the link to where you downloaded the dataset]
+**Source:** [Students Performance Dataset (Academic Success Factors in High School Students), by Rabie El Kharoua, Kaggle](https://www.kaggle.com/datasets/rabieelkharoua/students-performance-dataset). The Kaggle listing is tagged as synthetic data. This copy keeps 12 of the original columns (the ethnicity, music and volunteering columns were left out).
 
 ## Run it yourself
 
@@ -51,7 +51,7 @@ Run the notebook from the repository root so the relative `data/` and `figures/`
 
 ## Limitations
 
-- **The data looks synthetic.** The predictors are almost perfectly uncorrelated with each other, study time and absences are close to uniform, and a model explains 95% of GPA variation, far more than is typical for real student records. Results describe this dataset, not real students.
+- **The data is synthetic.** The source listing is tagged synthetic, and the numbers agree: the predictors are almost perfectly uncorrelated with each other, study time and absences are close to uniform, and a model explains 95% of GPA variation, far more than is typical for real student records. Results describe this dataset, not real students.
 - **Association, not causation.** Absences could be a symptom (illness, disengagement) rather than a cause of low grades.
 - **`GradeClass` agrees with `GPA` for only 93% of students**, so it was left out of every model to avoid leakage.
 - **Ordinal scores (0-4) are treated as numeric,** which assumes equal steps between levels.
